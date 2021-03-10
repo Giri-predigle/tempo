@@ -102,6 +102,8 @@ def update_byonic_user(identifier):
             raise CFException(ValueError(message), message, status_code=CFException.HTTP_400_BAD_REQUEST)
         byonic_user = COByonicUser.deserialize(jsondata)
         byonic_user.identifier = identifier
+        byonic_user.role_id = jsondata['role_id']['identifier']
+        byonic_user.organisation_id = jsondata['org_id']['identifier']
         byonic_user = bl_byonic_user.update_byonic_user(byonic_user)
         response = jsonify(byonic_user=byonic_user.serialize)
     except CFException as cfe:
