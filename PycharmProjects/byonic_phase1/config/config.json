@@ -1,0 +1,51 @@
+{
+	"Region": "DEV",
+	"Path":
+	{
+		"CONFIG_API_Path"			: "config",
+		"API_JSON_PATH"				: "test_storage"
+    },
+	"EnvPorts": {
+		 "DEV": 5305,
+		  "QA": 5304,
+		"PROD": 5302,
+		"SYSI": 5301,
+		"DEV1": 5306,
+		"DEV2": 5307,
+		"DEV3": 5308
+	},
+	"DebugMode" : "True",
+	"topics" : "Cyber Threats",
+	"job_levels": "Owner",
+	"employee_sizes": "1 to 10",
+	"countries" : "Afghanistan",
+	"industries" : "Accounting",
+	"SECRET_KEY" : "Predigle_AI_Bots",
+	"EXPIRY_TIME" : 120,
+	"Database":
+	{
+		"db_ilead_dev":
+		{
+			"USERNAME":"ilead360",
+            "PASSWORD":"dbPa$$word360",
+            "HOST": "3.12.207.166",
+            "DATABASE":"db_ilead"
+		},
+		"db_ilead_Second_dev":
+		{
+			"USERNAME":"ilead360",
+            "PASSWORD":"dbPa$$word360",
+            "HOST": "3.12.207.166",
+            "DATABASE":"db_iLead_Second"
+		},
+		"db_ilead_uat":
+		{
+			"DATABASE":"iLead_UAT_DB",
+			"HOST":"172.16.1.196",
+			"PORT":"3306",
+			"USERNAME":"ilead180qa",
+			"PASSWORD":"h+\"_^A+Q3dtKV"
+		}
+	}
+
+}
